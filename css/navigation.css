@@ -1,0 +1,29 @@
+.publish-nav {
+  position: relative;
+  left: 5%;
+  width: 87.5%;
+  background: transparent;
+  padding: 18px;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  color: #999;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  font-size: 12px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  border: none;
+  background: rgba(0, 0, 0, 0.4);
+  background: #fff;
+  padding: 10px 10px;
+  color: #1b1b1b;
+}

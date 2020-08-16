@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Basic -->
+
+  <head>
+    <!--meta tags-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Site Metas -->
+    <title>BookStore | QGN Learning</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/qgn.jpg" type="image/x-icon" />
+
+   <!--aos cdn-->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   
+
+    <!--cdn-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/sidebar.sass">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylsheet" href="css/newchanges.css" />
+    <link rel="stylesheet" href="css/loader.css" />
+   
+   
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+
+    <!--animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" />
+
+<style type="text/css">
+     .product-grid{
+       font-family: tahoma;
+       text-align: center;
+       overflow: hidden;
+       position: relative;
+       border: 2px solid white;
+       border-radius: 6%;
+       margin-top: 20px;
+     }
+
+     .product-grid:before{
+       content: "";
+       height: 100%;
+       width: 100%;
+       position: absolute;
+       left: 0;
+       top: 0;
+      z-index: 1;
+      transition: all 0.3s ease 0s;
+     }
+
+     .product-grid:hover::before{
+       background-color: rgba(0,0,0,0.55);
+     }
+
+     .product-grid .product-image{
+       overflow: hidden;
+       position: relative;
+     }
+     
+     .product-grid .product-image a{
+       display: block;
+     }
+     
+    .product-grid .product-image img{
+      width: 90%;
+      height: auto;
+    }
+
+    .product-grid .social{
+      width: 100%;
+      padding: 30px 0;
+      margin: 0;
+      list-style: none;
+      transform: translateX(-50%) translateY(-50%);
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 2;
+    }
+
+    .product-grid .social li{
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(300%);
+      transition: all 0.5s ease 0s;
+    }
+
+    .product-grid .social li:nth-child(2){
+      transition-delay:0.05s ;
+    }
+
+    .product-grid:hover .social li{
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .product-grid .social li a{
+      color: #000;
+      background-color: #fff;
+      line-height: 50px;
+      width: 50px;
+      height: 50px;
+      margin: 0 2px 10px;
+      border-radius: 50%;
+      display: block;
+      position: relative;
+      z-index: 2;
+      transition: all 0.3s;
+    }
+ 
+    .product-grid .social li a:hover{
+      color: white;
+      background-color: #d33b33;
+      transition: all 0.3s ease-in 0s;
+    }
+
+    .product-grid .product-content{
+      padding: 5px;
+      position: relative;
+      z-index: 2;
+      background-color:transparent;
+    }
+
+    .product-grid .title{
+      font-size: 20px;
+      font-weight: 500;
+      margin: 0 0 10px 0;
+    }
+
+    .product-grid .title a{
+      color: whitesmoke;
+      font-size: 18px;
+      font-weight: 300;
+    }
+    
+    .product-grid .title a:hover{
+      color: #fa8231;
+    }
+
+    .product-grid .price{
+      color: #3500d3;
+      font-size: 18px;
+     
+    }
+   
+     .tbox,.btn-sub{
+      border: none;
+      outline: none;
+    }
+
+    .tbox{
+       width: 0%;
+       transition: 0.6s;
+    }
+
+    .form-email{
+      position: relative;
+      left: 10%;
+    }
+
+    .email-box:hover > .tbox,.tbox:focus{
+      width: 180px;
+      padding: 0 5px;
+      
+    }
+
+    .btn-sub{
+      background: black;
+      line-height: 40px;
+      color: white;
+      padding: 0 10px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+.service-section{
+  width: 100%;
+	height: 90vh;
+  background-image: url(images/kids.jpg) !important;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20% 0% 0% 0%;
+	display: grid;
+	place-items:center;
+	font-family: 'Poppins', sans-serif;
+}
+
+.service-quote{
+  font-size: 60px;
+  font-family: "Lobster", cursive;
+  font-weight: 400;
+}
+
+    .service-wrap
+{
+	width: 100%;
+	height: auto;
+}
+.service-box
+{
+	width: 100%;
+	height: auto;
+	padding: 10px 60px;
+	border-radius: 10px;
+	position: relative;
+	text-align: center;
+	background: #fff;
+	box-shadow: 0px 2px 10px -4px #000;
+	animation:swing ease-in-out 8s infinite alternate;
+	transform-origin: center -50px;
+}
+.service-box::before
+{
+	width: 10px;
+	height: 10px;
+	border-radius: 50px;
+	background: #000;
+	position: absolute;
+	content: '';
+	top: -30px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.service-box::after
+{
+	width: 40px;
+	height: 40px;
+	border: 2px solid #ddd;
+	border-right: none;
+	border-bottom: none;
+	transform: rotate(45deg);
+	position: absolute;
+	content: '';
+	top: -20px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: -1;
+}
+.service-image
+{
+	width: 150px;
+	height: 150px;
+	margin: auto;
+}
+.service-image img
+{
+	width: 100%;
+	height: 100%;
+}
+.service-content
+{
+	width: 100%;
+	height: auto;
+}
+.service-content h1
+{
+	font-size: 30px;
+	font-weight: 500;
+	color: #fff;
+
+}
+.service-content p
+{
+	font-size: 14px;
+	font-weight: 400;
+	color: #eee;
+	line-height: 26px;
+}
+
+.service-box1
+{
+	background: linear-gradient(to right, #1cb5e0, #000046);
+}
+.service-box2
+{
+	background: linear-gradient(to right, #fc5c7d, #6a82fb);
+}
+.service-box3
+{
+	background: linear-gradient(to right, #ad5389, #3c1053);
+}
+
+.padit{
+
+ height: 30vh;
+ margin-bottom: 20%;
+ 
+}
+
+.hid1,.hid2{
+  display: none;
+}
+
+.down{
+  
+   height: 30vh;
+ margin-top: 10%;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ 
+}
+.sidecolor{
+  height: 278.5vh;
+}
+</style>
+
+</head>
+
+  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60" onload="loadit()">
+    <!-- Start Main Top -->
+
+    
+
+    <section
+      style="
+        background-color: #240090;
+        height: 104.3vh;
+        width: 5vw;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%, 0% 0%);
+        z-index: -1;
+        position: absolute;
+      "
+    ></section>
+    <section
+      style="
+        background-color: yellow;
+        height: 168%;
+        width: 5vw;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 0% 92%, 0% 0%);
+       
+        z-index: -2;
+        position: absolute;
+        top: 80vh;
+      "
+    ></section>
+    <section class="sidecolor"
+    style="background-color: orangered;
+    
+    z-index:-3;
+    width: 5vw;
+    position: absolute;
+    top: 100vh;">
+
+
+    </section>
+    <section
+      style="
+        background-color: #240090;
+        height: 104.3vh;
+        width: 5vw;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+        position: absolute;
+        left: 94vw;
+      "
+    ></section>
+    <section
+      style="
+        background-color: yellow;
+        height: 168%;
+        width: 5vw;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 92%, 0% 88%, 0% 0%);
+        z-index: -2;
+        position: absolute;
+        left: 94vw;
+        top: 80vh;
+      "
+    ></section>
+      <section class="sidecolor"
+    style="background-color: orangered;
+   
+    z-index:-3;
+    width: 5vw;
+    position: absolute;
+    top: 100vh;
+    left: 94vw;">
+    </section>
+
+    <main>
+      <div class="main-top" id="maintop">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <div class="text-slid-box">
+                <div id="offer-box" class="carouselTicker">
+                  <ul class="offer-box">
+                    <li><i class="fab fa-opencart"></i> WELCOME ONBOARD!</li>
+                    <li>
+                      <i class="fab fa-opencart"></i>AVAIL DISCOUNTS ON BOOKS!
+                    </li>
+                    <li>
+                      <i class="fab fa-opencart"></i>CHECK OUR SERVICES TOO!
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              
+              <div class="right-phone-box">
+                <p>Call us :- <a href="tel:8766308606"> +91-8766308606</a></p>
+              </div>
+              <div class="our-link">
+                <ul>
+                  <li><a href="#">HOME</a></li>
+                  <li><a href="#footer">ABOUTS US</a></li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Main Top -->
+
+      <!-- Start Main Top -->
+      <header class="main-header">
+        <!-- Start Navigation -->
+        <nav
+          class="navbar navbar-expand-sm navbar-light bg-info navbar-default bootsnav"
+        >
+          <div class="container">
+            <!-- Start Header Navigation -->
+            <div class="navbar-header">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbar-menu"
+                aria-controls="navbars-rs-food"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fa fa-bars"></i>
+              </button>
+            </div>
+            <!-- End Header Navigation -->
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+           <img src="images/qgn.jpg" class="imglogo" alt="qgn logo">
+              <h1 class="logo"><a href="index.html" ><span style="animation: logotitle 3s infinite; letter-spacing: 5px;">QGN</span> <br> 
+                 <span style="  animation: automotive 3s infinite ;">Learning</span></a> </h1>
+                 <div class="collapse navbar-collapse" id="navbar-menu">
+                 <ul
+                class="nav navbar-nav ml-auto" style="font-family: 'Lobster', cursive;"
+                
+              >
+                <li class="dropdown megamenu-fw show">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    >Products</a
+                  >
+                  <ul class="dropdown-menu megamenu-content" role="menu">
+                    <li>
+                      <div class="row" style="font-family: 'Montserrat', sans-serif;">
+                        <div class="col-menu col-md-3">
+                          <h6 class="title">Alphabets</h6>
+                          <div class="content">
+                            <ul class="menu-col">
+                              <li><a href="#purchase">Begin With ABCs</a></li>
+                              <li><a href="#purchase">First Alphabets</a></li>
+                              <li><a href="#purchase">Alphabets Activity</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- end col-3 -->
+                        <div class="col-menu col-md-3">
+                          <h6 class="title">Mathematics</h6>
+                          <div class="content">
+                            <ul class="menu-col">
+                              <li><a href="shop.html">Numbers </a></li>
+                              <li><a href="shop.html">Learn Numbers 1-50</a></li>
+                              <li><a href="#purchase">Maths Workbook KG</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- end col-3 -->
+                        <div class="col-menu col-md-3">
+                          <h6 class="title">Hindi</h6>
+                          <div class="content">
+                            <ul class="menu-col">
+                              <li><a href="#book">Akshar Aakrity</a></li>
+                              <li><a href="shop.html">Akshar Surbhi</a></li>
+                              <li><a href="#purchase">Hindi Varmala</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-menu col-md-3">
+                          <h6 class="title">Creative Learning</h6>
+                          <div class="content">
+                            <ul class="menu-col">
+                              <li><a href="shop.html">Harry Gets a Pet</a></li>
+                              <li><a href="shop.html">Learn with Colors</a></li>
+                              <li><a href="#purchase">Smart Rhymes</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- end col-3 -->
+                      </div>
+                      <!-- end row -->
+                    </li>
+                  </ul>
+                </li>
+               
+                <li class="nav-item">
+                  <a class="nav-link" href="#service">Our Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#footer">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+
+            
+          </div>
+        </nav>
+        <!-- End Navigation -->
+      </header>
+      <!-- End Main Top -->
+
+      <!-- Start Top Search -->
+      <div class="top-search">
+        <div class="container">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+            <input type="text" class="form-control" placeholder="Search" />
+          </div>
+        </div>
+      </div>
+      <!-- End Top Search -->
+
+      <!-- Start Slider -->
+      <div id="slides-shop" class="cover-slides">
+        <ul class="slides-container">
+          <li class="text-left">
+            <img src="images/banner-01.jpg" alt="" />
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h1 class="m-b-20">
+                    <strong style="font-family: 'Lobster', cursive;"
+                      >Welcome To <br />
+                      Our Official Site</strong
+                    >
+                  </h1>
+                  <p class="m-b-20" style="font-family: 'Montserrat', sans-serif;">
+                    some info related to startup (books related)<br />
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
+                    sed do eiusmod tempor incididunt <br />ut labore et dolore
+                    magna aliqua.
+                  </p>
+                  <p><a class="btn hvr-hover" href="productlanding.html">Shop New</a></p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="text-center">
+            <img src="images/banner-02.jpg" alt="" />
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h1 class="m-b-20">
+                    <strong style="font-family: 'Lobster', cursive;">What we aim to achieve... <br /> </strong>
+                  </h1>
+                  <p class="m-b-20" style="font-family: 'Montserrat', sans-serif;">
+                    our objectives and targets for this startup<br />
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
+                    sed do eiusmod tempor incididunt<br />
+                    ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="text-right">
+            <img src="images/banner-03.jpg" alt="" />
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h1 class="m-b-20">
+                    <strong style="font-family: 'Lobster', cursive;"
+                      >Want to become<br />
+                      one of us?</strong
+                    >
+                  </h1>
+                  <p class="m-b-30" style="font-family: 'Montserrat', sans-serif;">
+                    Joining criteria if any<br />
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    <br />sed do eiusmod tempor incididunt <br />ut labore et
+                    dolore magna aliqua.
+                  </p>
+                  <p><a class="btn hvr-hover" href="#footer-contact">Ping Us</a></p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      
+      </div>
+      <!-- End Slider -->
+
+      <!--banner-->
+      <div class="banner"   id="purchase">
+        <p style="animation: colortoggle 2s infinite;" data-aos="fade-right" data-offset="300">Awesome new arrivals ready for you...</p>
+      </div>
+    </main>
+
+    <!--books pamphlets-->
+   
+      
+
+<!-- end demo-->
+
+    <section class="books-category" >
+      <div class="books-panel">
+      
+     <aside class="category-column" data-aos="zoom-in">
+        <div class="sidebar">
+             <header>Hey Visitor! &#128526;<br> 
+              We are here with an 
+              exciting collection which you would definitely like! </header>
+             <ul>
+              
+                <li><a href="productlanding.html"><i class="fa fa-book" aria-hidden="true"></i>View Books </a></li>
+               
+             </ul>
+        </div>
+     </aside>
+
+      <div class=" books" >
+        <div class="container" style="display: inline-block;" >
+          <div class="row">
+            
+             <div class="col-md-4">
+              <div class="product-grid">
+                <div class="product-image">
+                  <a href="">
+                    <img src="images/FirstAlphabets_Web.jpg" class="pic-1" alt="Alphabets book">
+                  </a>
+                </div>
+                
+                <div class="product-content">
+                  <h3 class="title">
+                   <a href="">First Alphabets</a> 
+                  </h3>
+                  <div class="price">₹120.00</div>
+                </div>
+
+                <ul class="social">
+                  <li>
+                    <a href="" data-tip="description">
+                      <i class="fa fa-eye"></i>
+                    </a>
+                  </li>
+                  
+
+                </ul>
+                
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="product-grid">
+                <div class="product-image">
+                  <a href="">
+                    <img src="images/Numbers_1-10_Web.jpg" class="pic-1" alt="numbers book">
+                  </a>
+                </div>
+                
+                <div class="product-content">
+                  <h3 class="title">
+                   <a href="">Learn Numbers  </a> 
+                  </h3>
+                  <div class="price">₹210.00</div>
+                </div>
+
+                <ul class="social">
+                  <li>
+                    <a href="" data-tip="description">
+                      <i class="fa fa-eye"></i>
+                    </a>
+                  </li>
+                   
+
+                </ul>
+                
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="product-grid">
+                <div class="product-image">
+                  <a href="">
+                    <img src="images/Hindi_AksharAakriti_Web.jpg" class="pic-1" alt="Hindi book" height="200%">
+                  </a>
+                </div>
+                
+                <div class="product-content">
+                  <h3 class="title">
+                   <a href="">Akshar Aakrity</a> 
+                  </h3>
+                  <div class="price">₹210.00</div>
+                </div>
+
+                <ul class="social">
+                  <li>
+                    <a href="" data-tip="description">
+                      <i class="fa fa-eye"></i>
+                    </a>
+                  </li>
+                   
+
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+                
+      </div>
+      <aside class="gif-holder">
+        <img class="q-image qu-display--block qu-borderRadius--small" style="box-sizing: border-box; direction: ltr; max-width: 100%;" src="https://qphs.fs.quoracdn.net/main-qimg-995a68a544f9422a94c794d81ba1eaff">
+      </aside>
+ </div>
+
+       
+          
+      <div class="feedback" >
+        <p class="typeit" >Didn't find the book you want? Suggest to Us ! <div class="tenor-gif-embed" data-postid="5059284" data-share-method="host" data-width="11%" data-aspect-ratio="1.32" data-aos="zoom-in">
+          <a href="https://tenor.com/view/spongebob-squarepants-spongebob-think-thinking-gif-5059284"></a> </div>
+        </p>
+      </div>
+    
+    </section>
+    <section class="publish-nav" style="background-color: purple;">
+      <div>
+        <a href="#" class="btn">Give Feedback</a>
+      </div>
+    <div class="publishing">
+      <a href="#" class="btn">Get Published</a>
+      <a href="#" class="btn">FAQs</a>
+      <a href="#" class="btn">Appointments</a>
+    </div>
+  
+    </section>
+   
+    <!--
+        <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/MFmEaw3xJQ8NepQw4t" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/book-lover-tablet-MFmEaw3xJQ8NepQw4t">via GIPHY</a></p>
+      -->
+    <main>
+     
+                                                   <!--app suggest and -->
+    <section class="apps-email">
+      
+       
+             
+           <img alt="gif" class="headerImage" src="https://images.gr-assets.com/misc/1576518436-1576518436_goodreads_misc.gif" target="_blank">
+        
+        <aside class="email-design">
+             <div id="subscribe">
+               <p  class="subtitle" data-aos="fade-left">Subscribe for more...</p>
+               <p  class="subpara" data-aos="fade-up">Stay up-to-date with <br><span style="margin-left: 10px;">new collections, latest lookbooks & offers.</span></p>
+             </div>
+             <div id="email-bar">
+              <form action="" class="form-email">
+                   <div class="email-box" data-aos="zoom-in-up" id="service">
+                    
+                      <i class="fa fa-envelope"></i>
+                      <input class="tbox" type="email"  name="email-bar" placeholder="Enter Your Email">
+                      <button  class="btn-sub" type="button" onclick="alert('You have subscribed us! ');">Subscribe</button>
+                  </div>
+                  </form>
+                   
+             </div>
+        </aside>
+    </section>
+
+<!--services section-->
+ <section class="service-section">
+  <div class="service-quote" data-aos="zoom-in-right" >Have a look at our Services...</div>
+  <div class="service-wrap">
+    <div class="container">
+      
+      <div class="row padit" data-aos="zoom-out">
+        <div class="col-lg-4">
+          <div class="service-box service-box1">
+           
+            <div class="service-content" >
+              <h1>Design</h1>
+              <p> Book Design,
+                Book Cover Design and Advertisement Design
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="service-box service-box2">
+            
+            <div class="service-content">
+              <h1>Brand</h1>
+              <p>Branding, Packaging and Shipping</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="service-box service-box3">
+            
+            <div class="service-content">
+              <h1>Printing</h1>
+              <p>Print file Adjustment of Amazon Kindly or any Public on Demand.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 hid1">
+          <div class="service-box service-box3 ">
+           
+            <div class="service-content " >
+              <h1>Typesetting</h1>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 hid2">
+          <div class="service-box service-box2 hid">
+            
+            <div class="service-content">
+              <h1>Illustrations</h1>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="row down" data-aos="zoom-out" >
+          <div class="col-lg-4">
+            <div class="service-box service-box3">
+             
+              <div class="service-content" >
+                <h1>Typesetting</h1>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="service-box service-box2">
+              
+              <div class="service-content">
+                <h1>Illustrations</h1>
+                <p></p>
+              </div>
+            </div>
+          </div>
+         
+
+      </div>
+    </div>
+  </div>
+ </section>
+
+
+<!--footer starts-->
+      <footer>
+        <div class="footer-main" id="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="footer-widget" data-aos="fade-up">
+                  <h4>About Us</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fab fa-facebook" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fab fa-twitter" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fab fa-linkedin" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fab fa-google-plus" aria-hidden="true"></i
+                      ></a>
+                    </li>
+
+                    <li>
+                      <a href="#"
+                        ><i class="fab fa-whatsapp" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="footer-link" data-aos="fade-up">
+                  <h4>Information</h4>
+                  <ul style="list-style-type: none;">
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Our Sitemap</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Delivery Information</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="footer-link-contact" id="footer-contact" data-aos="fade-up">
+                  <h4>Contact Us</h4>
+                  <ul>
+                    <li>
+                      <p>
+                        <i class="fas fa-map-marker-alt"></i>NSUT IIF, Azad Hind
+                        Fauj Marg<br />
+                        Dwarka Sector -3<br />
+                        New Delhi - 110078
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fas fa-phone-square"></i>Phone:
+                        <a href="tel:8766308606">+91-8766308606</a>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fas fa-envelope"></i>Email:
+                        <a href="mailto:qgn.learningpl@gmail.com"
+                          >qgn.learningpl@gmail.com</a
+                        >
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!--copyright-->
+      <div class="footer-copyright">
+        <p class="footer-company">
+          All Rights Reserved. &copy; 2020
+          <a href="#">QGN Learning</a>
+        </p>
+      </div>
+      <!-- End copyright  -->
+
+      <a href="#maintop" id="arrowUp" title="Back to top"
+        ><img
+          src="images/arrow.png"
+          alt="arrow button"
+          height="40px"
+          width="40px"
+      /></a>
+    </main>
+    <!-- Start Footer  -->
+
+    <!-- End Footer  -->
+
+    <!-- Start copyright  -->
+
+    <!-- ALL JS FILES -->
+    <script>
+      AOS.init({
+        duration: 1000,
+      })
+    </script>
+     <script>
+      var preload = document.querySelector(".loader-wrapper");
+      function loadit() {
+        preload.style.display = "none";
+      }
+    </script>
+    <script>
+      let gif= document.querySelector(".tenor-gif-embed");
+      let para = document.querySelector(".feedback p");
+      let pad = document.querySelector(".padit");
+      
+      if(window.innerWidth <= 1200 && window.innerWidth>1010){
+         gif.setAttribute("data-width","12%");
+
+        }
+      if(window.innerWidth <= 1010){
+        gif.setAttribute("data-width","14%");
+      }
+      if(window.innerWidth <= 1010){
+        gif.setAttribute("data-width","15%");
+      }
+      if(window.innerWidth <=900){
+        document.querySelector(".service-box").setAttribute("style","padding: 10px 20px;");
+        pad.setAttribute("style","margin-left:10px;");
+      }
+
+      if(window.innerWidth<=780){
+        document.querySelector(".service-box").setAttribute("style","padding: 10px 10px;");
+      }
+
+      if(window.innerWidth<=768){
+        document.querySelector(".down").setAttribute("style","display: none;");
+        document.querySelector(".hid1,.hid2").setAttribute("style","display:block");
+        document.querySelector(".padit").setAttribute("style","margin-bottom:40%; margin-left:5%;");
+      }
+
+      if(window.innerWidth<=570){
+        document.querySelector(".padit").setAttribute("style","margin-bottom:50%; margin-left:5%;");
+      }
+
+      if(window.innerWidth<=480){
+        document.querySelector(".padit").setAttribute("style","margin-bottom:70%; margin-left:5%;");
+        document.querySelector(".service-quote").setAttribute("style","font-size:1.8em;");
+      }
+
+      if(window.innerWidth<=360){
+        document.querySelector(".padit").setAttribute("style","margin-bottom:70%;");
+      }
+
+      if(window.innerWidth <=500)
+      {
+        para.innerHTML= "Contact us for more Books!";
+      }
+
+
+      if(window.innerWidth <= 815){
+        document.querySelector(".service-quote").innerHTML = "Our Services";
+      }
+    </script>
+
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script> 
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/inewsticker.js"></script>
+    <script src="js/bootsnav.js."></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

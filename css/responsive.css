@@ -1,0 +1,531 @@
+/* only small desktops */
+/* tablets */
+/* only small tablets */
+
+@media screen and (min-width: 1400px) {
+  .imglogo {
+    height: 100px;
+    position: relative;
+    left: -5%;
+    border: 5px solid black;
+  }
+  .logo {
+    width: 20vw;
+    font-family: "Ranchers", cursive;
+    font-weight: 700;
+    position: relative;
+    left: -3%;
+    font-size: 1.6em;
+    letter-spacing: 2px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .email-box {
+    position: relative;
+    left: 18%;
+  }
+}
+
+@media screen and (max-width: 1340px) {
+  .banner p {
+    font-size: 1.8em;
+  }
+  .subtitle {
+    margin-left: 110px;
+  }
+  .subpara {
+    font-size: 1.1em;
+  }
+  .headerImage {
+    width: 700px;
+    height: 100%;
+
+    clip-path: polygon(0% 0%, 80% 0%, 100% 80%, 100% 100%, 0% 100%, 0% 80%);
+  }
+}
+
+@media screen and (max-width: 1322px) {
+  .sidebar {
+    height: 61%;
+    position: relative;
+    top: 16%;
+  }
+  .product-grid {
+    top: 9%;
+  }
+}
+
+@media screen and (max-width: 1314px) {
+  .email-box {
+    position: relative;
+    left: 15%;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .email-box {
+    position: relative;
+    left: 12%;
+  }
+}
+
+@media screen and (max-width: 1222px) {
+  .product-grid .title a {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 1215px) {
+  .banner p {
+    font-size: 1.5em;
+  }
+  .subtitle {
+    font-size: 1.5em;
+    margin-left: 95px;
+  }
+  .subpara {
+    margin-left: 120px;
+    font-size: 0.9em;
+    width: 30vw;
+  }
+  .headerImage {
+    width: 600px;
+    height: 100%;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 80%, 100% 100%, 0% 100%, 0% 80%);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .logo {
+    display: none;
+  }
+  .feedback p {
+    font-size: 1.5em;
+    font-family: "Anton", sans-serif;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+  }
+  .email-design {
+    width: 65vw;
+
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%, 20% 80%);
+  }
+  .headerImage {
+    clip-path: polygon(0% 0%, 70% 0%, 100% 80%, 100% 100%, 0% 100%, 0% 80%);
+  }
+  .subpara {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 1133px) {
+  .col-md-4 {
+    -ms-flex: 0 0 36.333333%;
+    flex: 0 0 36.333333%;
+    max-width: 33.333333%;
+  }
+
+  .books {
+    width: 75vw;
+    height: 100%;
+  }
+  .sidebar {
+    position: relative;
+    left: 1%;
+  }
+}
+
+@media screen and (max-width: 1065px) {
+  .sidebar header {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .banner {
+    width: 86.1vw;
+  }
+  .banner p {
+    font-size: 1.3em;
+  }
+  .feedback p {
+    font-size: 1.2em;
+    font-family: "Anton", sans-serif;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+  }
+  .headerImage {
+    width: 450px;
+    height: 100%;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 80%, 100% 100%, 0% 100%, 0% 80%);
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .dropdown-toggle {
+    display: none;
+  }
+
+  .padit,
+  .down {
+    flex-wrap: nowrap;
+  }
+
+  .down {
+    position: relative;
+    left: -100%;
+    top: 80%;
+  }
+
+  nav.navbar.bootsnav .navbar-nav {
+    padding: 0px;
+    margin: 0px;
+  }
+  nav.navbar.bootsnav ul.nav > li > a {
+    padding: 0px 12px;
+  }
+  .imglogo {
+    position: relative;
+    left: 0%;
+  }
+  nav.navbar.bootsnav .navbar-header {
+    width: 0%;
+  }
+  .email-design {
+    width: 65vw;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .subtitle {
+    margin-left: 70px;
+  }
+  .subpara {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .down {
+    left: -90%;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .banner p {
+    font-size: 1.2em;
+  }
+  .feedback p {
+    font-size: 1.1em;
+    font-family: "Anton", sans-serif;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+  }
+  .email-design {
+    width: 65vw;
+  }
+  .headerImage {
+    width: 400px;
+    height: 100%;
+    clip-path: polygon(0% 0%, 72% 0%, 100% 80%, 100% 100%, 0% 100%, 0% 80%);
+  }
+  .books {
+    display: none;
+  }
+  .books-category {
+    height: 45vh;
+  }
+  .sidebar {
+    position: relative;
+    left: 33%;
+    width: 50vw;
+    height: 67%;
+  }
+  .gif-holder {
+    position: relative;
+    left: 35%;
+    width: 325px;
+  }
+}
+
+@media (max-width: 991px) {
+  .imglogo {
+    position: relative;
+    left: -5%;
+  }
+}
+
+@media (max-width: 900) {
+  .product-grid {
+    position: relative;
+    top: 11%;
+  }
+}
+
+@media (max-width: 777px) {
+  .padit {
+    position: relative;
+    left: -5%;
+  }
+  .feedback p {
+    font-size: 1.1em;
+    font-family: "Anton", sans-serif;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+  }
+  .email-design {
+    width: 80vw;
+  }
+  .subtitle {
+    font-size: 1.25em;
+    position: relative;
+    left: -5%;
+  }
+  .subpara {
+    font-size: 0.8em;
+    position: relative;
+    right: 10px;
+    width: 30vw;
+  }
+  .headerImage {
+    width: 350px;
+  }
+}
+
+/* mobile or only mobile */
+@media (max-width: 768px) {
+  .imglogo {
+    position: relative;
+    left: -25%;
+  }
+  .service-section {
+    height: 120vh;
+  }
+  .padit {
+    display: block;
+  }
+
+  .service-box {
+    margin-top: 20px;
+  }
+  nav.navbar.bootsnav .navbar-header {
+    width: 40%;
+  }
+  .navbar-light .navbar-toggler {
+    color: #010101;
+    border-radius: 0px;
+    margin-right: 7px;
+    padding-top: 6px;
+    padding-top: 6px;
+    float: left;
+    margin-top: 20px;
+  }
+  nav.navbar.bootsnav ul.nav > li > a {
+    padding: 5px 15px;
+  }
+  nav.navbar.bootsnav .navbar-nav {
+    padding: 0px;
+    margin: 0px;
+  }
+  .cover-slides h1 {
+    font-size: 45px;
+  }
+  .cover-slides p {
+    font-size: 16px;
+  }
+  .cover-slides p a {
+    font-size: 18px;
+  }
+
+  .custom-select-box {
+    display: none;
+  }
+
+  .footer-widget {
+    margin-bottom: 30px;
+  }
+  .footer-link {
+    margin-bottom: 30px;
+  }
+  nav.navbar.bootsnav ul.nav li.dropdown ul.dropdown-menu {
+    position: initial !important;
+    top: 0px;
+  }
+  .col-menu .title {
+    font-size: 16px;
+  }
+  nav.navbar.bootsnav ul.nav li.dropdown ul.dropdown-menu > li > a:hover {
+    color: #d33b33;
+  }
+  .hover-team {
+    margin-bottom: 30px;
+  }
+  .tenor-gif-embed {
+    display: none;
+  }
+  .feedback p {
+    font-size: 1.2em;
+    font-family: "Anton", sans-serif;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+  }
+  .email-design {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  .subtitle {
+    font-size: 1.3em;
+  }
+  .subpara {
+    position: relative;
+    left: -3%;
+  }
+  .email-box {
+    position: relative;
+    left: -5%;
+  }
+  .headerImage {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 100% 100%, 0% 100%, 0% 80%);
+  }
+  .gif-holder {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 705px) {
+  .email-design {
+    width: 100%;
+  }
+  .headerImage {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 694px) {
+  .sidebar {
+    width: 58vw;
+    left: 2%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .email-design {
+    display: none;
+  }
+  .headerImage {
+    width: 100%;
+  }
+  .gif-holder {
+    width: 228px;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 599px) {
+  .sidebar header {
+    font-size: 20px;
+  }
+  .publish-nav {
+    display: block;
+  }
+  .publishing {
+    display: block;
+  }
+  .feedback p {
+    font-size: 1em;
+    font-family: "Anton", sans-serif;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+  }
+  .imglogo {
+    position: relative;
+    left: 0%;
+  }
+
+  .navbar-light .navbar-toggler {
+    border-color: #d33b33;
+    color: #010101;
+    border-radius: 0px;
+    margin-right: 7px;
+    padding-top: 6px;
+  }
+  nav.navbar.bootsnav ul.nav > li > a {
+    padding: 5px 15px;
+  }
+  nav.navbar.bootsnav .navbar-nav {
+    padding: 0px;
+    margin: 0px;
+  }
+  .cover-slides h1 {
+    font-size: 38px;
+  }
+  .cover-slides p {
+    font-size: 16px;
+  }
+  .cover-slides p a {
+    font-size: 18px;
+  }
+
+  .footer-widget {
+    margin-bottom: 30px;
+  }
+  .footer-link {
+    margin-bottom: 30px;
+  }
+  nav.navbar.bootsnav ul.nav li.dropdown ul.dropdown-menu {
+    position: initial !important;
+    top: 0px;
+  }
+  .col-menu .title {
+    font-size: 16px;
+  }
+  nav.navbar.bootsnav ul.nav li.dropdown ul.dropdown-menu > li > a:hover {
+    color: #d33b33;
+  }
+  .hover-team {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 521px) {
+  .sidebar header {
+    line-height: 35px;
+    font-size: 18px;
+  }
+  .sidebar {
+    height: 60%;
+  }
+}
+
+@media (max-width: 500px) {
+  .gif-holder {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .banner {
+    width: 84.3vw;
+  }
+  .banner p {
+    font-size: 1em;
+  }
+  .sidebar {
+    height: 74%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .banner p {
+    font-size: 0.8em;
+  }
+  .sidebar {
+    top: 5%;
+  }
+}

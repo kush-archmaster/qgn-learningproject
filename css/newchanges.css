@@ -1,0 +1,11 @@
+@keyframes sign {
+  0% {
+    color: white;
+  }
+  50% {
+    color: tomato;
+  }
+  100% {
+    color: white;
+  }
+}
