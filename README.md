@@ -1,2 +1,2 @@
 # qgn-learningproject
-ecommerce website on children books using only frontend development
+ecommerce website on children books using only frontend development!
